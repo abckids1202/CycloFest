@@ -1,0 +1,24 @@
+{
+  "name": "cycling-event-platform",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "concurrently -n API,WEB -c blue,green \"npm run dev --workspace=@cycling/api\" \"npm run dev --workspace=@cycling/web\"",
+    "start": "npm run start --workspace=@cycling/api",
+    "build": "npm run build --workspace=@cycling/web",
+    "db:migrate": "npm run db:migrate --workspace=@cycling/api",
+    "db:rollback": "npm run db:rollback --workspace=@cycling/api",
+    "db:seed": "npm run db:seed --workspace=@cycling/api",
+    "db:check": "npm run db:check --workspace=@cycling/api",
+    "auth:bootstrap": "npm run auth:bootstrap --workspace=@cycling/api",
+    "test": "npm run test --workspace=@cycling/api",
+    "payment:mock": "npm run payment:mock --workspace=@cycling/api --"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}

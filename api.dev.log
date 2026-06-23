@@ -1,0 +1,22 @@
+
+> @cycling/api@0.1.0 dev
+> node --watch --env-file=../../.env src/server.js
+
+Cycling API running at http://localhost:8000
+Event data source: PostgreSQL
+Restarting 'src/server.js'
+Cycling API running at http://localhost:8000
+Event data source: PostgreSQL
+Restarting 'src/server.js'
+Cycling API running at http://localhost:8000
+Event data source: PostgreSQL
+Restarting 'src/server.js'
+Cycling API running at http://localhost:8000
+Event data source: PostgreSQL
+Restarting 'src/server.js'
+Restarting 'src/server.js'
+Cycling API running at http://localhost:8000
+Event data source: PostgreSQL
+Restarting 'src/server.js'
+Cycling API running at http://localhost:8000
+Event data source: PostgreSQL

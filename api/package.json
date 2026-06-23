@@ -1,0 +1,25 @@
+{
+  "name": "@cycling/api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file=../../.env src/server.js",
+    "start": "node --env-file=../../.env src/server.js",
+    "db:migrate": "node --env-file=../../.env src/database/scripts/migrate.js up",
+    "db:rollback": "node --env-file=../../.env src/database/scripts/migrate.js down",
+    "db:seed": "node --env-file=../../.env src/database/scripts/seed.js",
+    "db:check": "node --env-file=../../.env src/database/scripts/check.js",
+    "auth:bootstrap": "node --env-file=../../.env src/modules/auth/scripts/bootstrap-owner.js",
+    "test": "node --test",
+    "payment:mock": "node --env-file=../../.env src/modules/payments/scripts/send-mock-webhook.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "pg": "^8.21.0"
+  },
+  "devDependencies": {
+    "node-pg-migrate": "^8.0.4"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@cycling/web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node dev-server.js",
+    "build": "vite build --configLoader runner",
+    "preview": "vite preview --configLoader runner"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "vite": "^7.1.7"
+  }
+}
